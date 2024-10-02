@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121829; /* Dark background */
+  color: #fff;
+  line-height: 1.6;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  padding: 20px 0;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow-y: auto;
+}
+
+header {
+  background-color: #4a90e2; /* Blue header */
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: text-decoration 0.3s ease;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.content-section {
+  margin-bottom: 40px;
+  min-height: calc(100vh - 100px);
+}
+
+.intro,
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.image-placeholder {
+  width: 100%;
+  max-width: 270px;
+  height: 480px;
+  background-color: #ccc; /* Gray placeholder */
+  border: 2px solid #4a90e2; /* Blue border */
+}
+
+.intro-text,
+.about-text {
+  max-width: 100%;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+#contact {
+  text-align: center;
+  margin-bottom: 0; /* Verringert den Abstand zum Footer */
+  padding-bottom: 0; /* Entfernt zusätzlichen inneren Abstand */
+  min-height: auto; /* Entfernt die Mindesthöhe, wenn vorhanden */
+}
+
+.mail-button {
+  display: inline-block;
+  background-color: #4a90e2;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 0; /* Verringert den Abstand unter dem Button */
+  transition: background-color 0.3s ease;
+}
+
+.mail-button:hover {
+  background-color: #357abd; /* Darker blue on hover */
+}
+
+footer {
+  background-color: #4a90e2;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+footer p {
+  color: white;
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .intro,
+  .about-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .intro-text,
+  .about-text {
+    max-width: calc(100% - 290px);
+  }
+
+  .image-placeholder {
+    width: 270px;
+    height: 480px;
+  }
+
+  .about-content {
+    flex-direction: row-reverse; /* Image on the right for about section */
+  }
+}
