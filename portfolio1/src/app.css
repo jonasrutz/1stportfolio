@@ -94,7 +94,7 @@ nav ul li a:hover {
 #contact {
   text-align: center;
   margin-bottom: 19vh; /* Verringert den Abstand zum Footer */
-  padding-bottom: 0; /* Entfernt zusätzlichen inneren Abstand */
+  padding-bottom: 5vh; /* Entfernt zusätzlichen inneren Abstand */
   min-height: auto; /* Entfernt die Mindesthöhe, wenn vorhanden */
 }
 .mail-button {
