@@ -77,7 +77,7 @@ nav ul li a:hover {
   background-color: #ccc;
   border: 2px solid #4a90e2;
 }
-.intro-text,
+.intro-text,  
 /*Content*/
 /*About*/
 .about-text {
@@ -85,14 +85,15 @@ nav ul li a:hover {
 }
 .abou {
   text-align: center;
-}
-h2 {
   font-size: 32px;
   margin-bottom: 20px;
 }
+.about-content {
+  text-align: center;
+}
 #contact {
   text-align: center;
-  margin-bottom: 0; /* Verringert den Abstand zum Footer */
+  margin-bottom: 19vh; /* Verringert den Abstand zum Footer */
   padding-bottom: 0; /* Entfernt zusätzlichen inneren Abstand */
   min-height: auto; /* Entfernt die Mindesthöhe, wenn vorhanden */
 }
